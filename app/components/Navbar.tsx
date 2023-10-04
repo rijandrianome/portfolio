@@ -12,12 +12,18 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [active, setActive] = useState("Home");
 
+  const onCLickMenu = (menu: string) => {
+    setActive(menu);
+    if (toggle) setToggle(false);
+  };
+
   return (
-    <nav className="bg-white border-gray-200 dark:bg-gray-900">
+    <nav className="bg-white border-gray-200 dark:bg-gray-900 fixed-top">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a
-          href="https://rijandrianome.vercel.app/"
+          href="#Home"
           className="flex items-center"
+          onClick={() => setToggle(false)}
         >
           <Image
             className="rounded-full mr-3"
@@ -70,7 +76,7 @@ const Navbar = () => {
                 href="https://www.linkedin.com/in/rija-andrianome-b6a49a88/"
                 data-rb-event-key="https://www.linkedin.com/in/rija-andrianome-b6a49a88/"
                 className={active === "linkedin" ? css_active : css_normal}
-                onClick={() => setActive("linkedin")}
+                onClick={() => onCLickMenu("linkedin")}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +94,7 @@ const Navbar = () => {
                 href="https://github.com/rijandrianome"
                 data-rb-event-key="https://github.com/rijandrianome"
                 className={active === "git" ? css_active : css_normal}
-                onClick={() => setActive("git")}
+                onClick={() => onCLickMenu("git")}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -100,13 +106,13 @@ const Navbar = () => {
                 </svg>
               </a>
             </li>
-            <li key="mail">
+            {/* <li key="mail">
               <a
                 target="_blank"
                 href="mailto:rijandrianome@gmail.com"
                 data-rb-event-key="mailto:rijandrianome@gmail.com"
                 className={active === "mail" ? css_active : css_normal}
-                onClick={() => setActive("mail")}
+                onClick={() => onCLickMenu("mail")}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -117,12 +123,12 @@ const Navbar = () => {
                   <path d="M22.288 21h-20.576c-.945 0-1.712-.767-1.712-1.712v-13.576c0-.945.767-1.712 1.712-1.712h20.576c.945 0 1.712.767 1.712 1.712v13.576c0 .945-.767 1.712-1.712 1.712zm-10.288-6.086l-9.342-6.483-.02 11.569h18.684v-11.569l-9.322 6.483zm8.869-9.914h-17.789l8.92 6.229s6.252-4.406 8.869-6.229z"></path>
                 </svg>
               </a>
-            </li>
+            </li> */}
             <li key="Skills">
               <a
                 href="#Skills"
                 className={active === "Skills" ? css_active : css_normal}
-                onClick={() => setActive("Skills")}
+                onClick={() => onCLickMenu("Skills")}
               >
                 Skills
               </a>
@@ -131,7 +137,7 @@ const Navbar = () => {
               <a
                 href="#Work"
                 className={active === "Work" ? css_active : css_normal}
-                onClick={() => setActive("Work")}
+                onClick={() => onCLickMenu("Work")}
               >
                 Work
               </a>
@@ -140,7 +146,7 @@ const Navbar = () => {
               <a
                 href="#Contact"
                 className={active === "Contact" ? css_active : css_normal}
-                onClick={() => setActive("Contact")}
+                onClick={() => onCLickMenu("Contact")}
               >
                 Contact
               </a>
