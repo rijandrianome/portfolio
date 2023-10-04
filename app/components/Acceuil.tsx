@@ -4,7 +4,7 @@ import H1 from "./H1";
 const Acceuil = () => {
   return (
     <>
-      <H1>Développeur d'applications</H1>
+      <H1>Développeur d&apos;applications</H1>
       <div className="w-4/5 pl-12 text-center">
         <p>
           Après des études universitaires de 5 ans et un parcours professionnel
