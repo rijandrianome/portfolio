@@ -1,10 +1,11 @@
 import React from "react";
+import H1 from "./H1";
 
 const Contact = () => {
   return (
     <div>
-      <h1 className="text-center">Contact</h1>
-      <div className="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2 lg:grid-cols-3">
+      <H1>Contact</H1>
+      <div className="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2 lg:grid-cols-3 pl-56">
         <div>
           <span className="inline-block p-3 text-blue-500 rounded-full bg-blue-100/80 dark:bg-gray-800">
             <svg
@@ -27,7 +28,7 @@ const Contact = () => {
             Email
           </h2>
           <p className="mt-2 text-gray-500 dark:text-gray-400">
-            Hope to see you soon
+            Contact direct
           </p>
           <p className="mt-2 text-blue-500 dark:text-blue-400">
             rijandrianome@gmail.com
@@ -58,13 +59,13 @@ const Contact = () => {
           </span>
 
           <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">
-            Office
+            Bureau
           </h2>
           <p className="mt-2 text-gray-500 dark:text-gray-400">
-            Come say hello at my office.
+            Situé en centre ville.
           </p>
           <p className="mt-2 text-blue-500 dark:text-blue-400">
-            Lot 61 C III Ter Behitsy Ambohimangakely - Antananarivo 101
+            Inforce Madagascar 15Bis, Rue Patrice Lumumba - Antananarivo 101
           </p>
         </div>
 
@@ -87,10 +88,10 @@ const Contact = () => {
           </span>
 
           <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">
-            Phone
+            Téléphone
           </h2>
           <p className="mt-2 text-gray-500 dark:text-gray-400">
-            Mon-Fri from 8am to 5pm.
+            Lundi - Vendredi de 8h à 17h.
           </p>
           <p className="mt-2 text-blue-500 dark:text-blue-400">
             +261 34 08 951 72

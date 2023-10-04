@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import H1 from "./H1";
 
 type competence = {
   id: number;
@@ -36,7 +37,7 @@ const TopSkills = () => {
 
   return (
     <div>
-      <h1 className="text-center">Skills</h1>
+      <H1>Meilleures compétences</H1>
       <section
         x-data="skillDisplay"
         className="p-6 space-y-6 rounded-xl md:grid md:grid-cols-2 md:gap-4 sm:space-y-0"

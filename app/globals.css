@@ -60,3 +60,12 @@ body {
   font-weight: 900;
   font-family: Font Awesome\ 6 Free;
 }
+
+.bg-img-page {
+  background-color: gainsboro;
+  /* background-image: "../beams-home95.jpg";
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50%; */
+}
