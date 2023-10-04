@@ -41,7 +41,10 @@ const Work = () => {
       <div className="grid grid-cols-1 gap-6 mt-12 w-4/5 pl-56">
         <ol className="relative border-l border-gray-200 dark:border-gray-700">
           {works.map((item, index) => (
-            <li className={"mb-10 ml-6 " + (index === 0 ? "pt-10" : "")}>
+            <li
+              key={item.id}
+              className={"mb-10 ml-6 " + (index === 0 ? "pt-10" : "")}
+            >
               <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                 <svg
                   className="w-2.5 h-2.5 text-blue-800 dark:text-blue-300"

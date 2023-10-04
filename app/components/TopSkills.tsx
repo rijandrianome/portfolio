@@ -33,7 +33,7 @@ const TopSkills = () => {
     pourcent = competences[currentSkill - 1].pourcent;
     dasharray = circumference;
     dashoffset = circumference - (pourcent / 100) * circumference;
-  }, [currentSkill]);
+  }, [currentSkill, competences]);
 
   return (
     <div>
