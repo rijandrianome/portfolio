@@ -19,8 +19,8 @@ export default function Home() {
       </div>
       <div id="Skills" className="anchor"></div>
       <div className="pt-20">
-        <TopSkills></TopSkills>
         <Skills></Skills>
+        <TopSkills></TopSkills>
       </div>
       <div id="Work" className="anchor"></div>
       <div className="pt-20">

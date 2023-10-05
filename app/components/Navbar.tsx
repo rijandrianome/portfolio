@@ -54,9 +54,9 @@ const Navbar = () => {
           >
             <path
               stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
               d="M1 1h15M1 7h15M1 13h15"
             />
           </svg>
@@ -130,7 +130,7 @@ const Navbar = () => {
                 className={active === "Skills" ? css_active : css_normal}
                 onClick={() => onCLickMenu("Skills")}
               >
-                Skills
+                Compétences
               </a>
             </li>
             <li key="Work">
@@ -139,7 +139,7 @@ const Navbar = () => {
                 className={active === "Work" ? css_active : css_normal}
                 onClick={() => onCLickMenu("Work")}
               >
-                Work
+                Parcours
               </a>
             </li>
             <li key="Contact">
